@@ -1,0 +1,550 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	font-family: Impact, Charcoal, sans-serif;
+}
+html {
+	font-size:62.5%;
+}
+/* MAIN NAVIGATION AND HORIZONTAL BAR ELEMENTS */
+
+#Menu-bar {
+	max-width:100vw;
+	height:auto;
+	display:flex;
+	justify-content:flex-start;
+	align-items:center;
+	flex-direction:row;
+	flex-wrap:wrap;
+	background-image:url("location-pics/33.jpg");
+	background-size:100% 100%;
+}
+#button {
+	height:20vh;
+	display:block;
+	width:25%;
+}
+#button img {
+	width:30px;
+	height:30px;
+	display:flex;
+	margin:0 auto;
+	position:relative;
+	top:50%;
+	transform:translateY(-50%);
+	border:1px solid white;
+	background-color:rgb(113, 95, 125);
+}
+#Menu-elements {
+	width:75%;
+	height:20vh;
+	display:flex;
+}
+#header-container {
+	display:flex;
+	height:20vh;
+	width:65%;
+	flex-direction:column;
+	margin-bottom:20px;
+	justify-content:center;
+	align-items:center;
+}
+#Menu-elements h2{
+	margin:0 auto 0 auto;
+	height:auto;
+	width:auto;
+	font-size:2.4rem;
+	font-family:Impact, Charcoal, sans-serif;
+	text-transform:uppercase;
+	font-style:oblique;
+	font-weight:700;
+	text-shadow:5px 5px 3px black;
+	color:white;
+	position:relative;
+}
+#header-container a {
+	text-decoration:none;
+	color:white;
+}
+#Menu-elements h3 {
+	margin:5px auto 0 auto;
+	height:auto;
+	width:auto;
+	font-size:1.2rem;
+	font-family:Impact, Charcoal, sans-serif;
+	font-style:oblique;
+	font-weight:200;
+	text-shadow:5px 5px 3px black;
+	color:white;
+	opacity:0.9;
+	position:relative;
+}
+#Rating-container {
+	width:35%;
+	height:20vh;
+	display:flex;
+	flex-direction:row;
+	justify-content:flex-end;
+	align-items:center;
+}
+
+#Main-bar-icon-container-Facebook::before {
+	content:"";
+	display:inline-block;
+	background-image:url("icons/Facebook Filled-50-100-500px/icons8-facebook-filled-100.png");
+	background-size:cover;
+	width: 30px;
+    height: 30px;
+	margin-right:0;
+	
+}
+#Main-bar-icon-container-Instagram::before {
+	content:"";
+	display:inline-block;
+	background-image:url("icons/Instagram Filled-50-100-500px/icons8-instagram-filled-100.png");
+	background-size:cover;
+	width: 30px;
+    height: 30px;
+	
+}
+#Horizontal-bar-container {
+	display:none;
+	height:auto;
+	width:100vw;
+	background-color:rgba(0,0,0,0.7);
+	margin-bottom:0;
+	border:2px solid black;
+	z-index:999;
+	margin-top:35px;
+}
+#Horizontal-bar-container ul {
+	display:flex;
+	flex-direction:row;
+	margin:0 auto;
+	width:100%;
+}
+#Horizontal-bar-container ul li {
+	color:white;
+	font-family:Impact, Charcoal, sans-serif;
+	font-weight:300;
+	text-shadow:5px 5px 3px black;
+	color:white;
+	margin:0 auto;
+	font-size:2.9rem;
+	line-height:2;
+	list-style:none;
+	
+}
+#Horizontal-bar-container ul li a {
+	text-decoration:none;
+	color:white;
+}
+
+/* MAIN NAVIGATION AND HORIZONTAL BAR ELEMENTS */
+
+/* VERTICAL BAR ELEMENTS */
+#Menu-elements ul {
+	display:none;
+}
+#vertical-bar {
+	max-width:100%;
+	height:auto;
+	display:flex;
+	flex-direction:row;
+	position:absolute;
+	z-index:999;
+	overflow:hidden;
+	visibility:hidden;
+	background-color:rgba(113, 95, 125,1);
+	
+}
+#vertical-bar a {
+	text-decoration:none;
+	color:white;
+}
+#vertical-bar ul {
+	display:flex;
+	flex-direction:row;
+	height:100%;
+	width:100%;
+	align-items:space-between;
+	justify-content:space-between;
+}
+#vertical-bar ul li {
+	
+	margin:0 auto;
+	line-height:300%;
+	letter-spacing:0.2rem;
+	font-size:1.0rem;
+	text-shadow:5px 5px 3px gray;
+	color:white;
+	font-family:Impact, Charcoal, sans-serif;
+	text-transform:uppercase;
+	list-style:none;
+	padding:1% 5px 1% 5px;
+	background-color:rgba(113, 95, 125,1);
+	border:2px solid gray;
+	
+}
+
+/* Booking Section */
+
+#Title-container {
+	width:100vw;
+	height:40vh;
+	display:flex;
+	background-image:url("location-pics/Book a table.jpg");
+	background-position:bottom center;
+	background-size:cover;
+	justify-content: center;
+    align-items: center;
+	flex-direction:column;
+	color:white;
+}
+#Title-container a {
+	text-decoration:none;
+	color:white;
+	cursor:default;
+}
+#Title-container h2 {
+	font-size:1.4rem;
+	padding-top:10px 0;
+	font-style:oblique;
+	text-shadow:5px 5px 3px black;
+	color:inherit;
+	text-decoration:none;
+	font-weight:300;
+	text-transform:uppercase;
+	font-family: Impact, Charcoal, sans-serif;
+}
+#Opening-times-main-container {
+	width:100vw;
+	height:auto;
+	display:flex;
+	flex-direction: column;
+	justify-content: flex-start;
+    align-items: center;
+	background-image:url("location-pics/opening-times.jpg");
+	background-size:cover;
+	background-position:bottom center;
+}
+#Opening-times-main-container h2 {
+	font-size:1.7rem;
+	font-style:oblique;
+	font-weight:400;
+	text-shadow:5px 5px 3px black;
+	color:white;
+	border-bottom:1px solid white;
+	padding-top:20px;
+}
+#Opening-times-schedule-container {
+	width:100vw;
+	display:flex;
+	flex-direction:row;
+	justify-content: center;
+    align-items: center;
+}
+#Days-container {
+	width:50vw;
+	display:flex;
+	justify-content: center;
+    align-items: center;
+	margin-top:5%;
+	padding-bottom:20px;
+}
+#Days-container p {
+	font-size:1.3rem;
+	font-style:oblique;
+	font-weight:400;
+	text-shadow:5px 5px 3px black;
+	color:white;
+	line-height:2.5;
+	
+}
+#Hours-container {
+	width:50vw;
+	display:flex;
+	justify-content: center;
+    align-items: center;
+	margin-top:5%;
+	padding-bottom:20px;
+}
+#Hours-container p {
+	font-size:1.3rem;
+	font-style:oblique;
+	font-weight:400;
+	text-shadow:5px 5px 3px black;
+	color:white;
+	line-height:2.5;
+}
+
+ /* FOOTER ELEMENTS */
+  
+#Footer-title-container {
+	max-width:100vw;
+	height:auto;
+	display:flex;
+	flex-direction:column;
+	flex-wrap:nowrap;
+	background-image:url("location-pics/footer-image.jpg");
+	background-size:cover;
+	padding-bottom:20px;
+}
+#Footer-title-container h2 {
+	font-size:1.5rem;
+	padding:20px 0 20px 0;
+	font-family:Impact, Charcoal, sans-serif;
+	text-transform:uppercase;
+	font-style:oblique;
+	font-weight:700;
+	color:white;
+	text-align:center;
+	border-bottom:4px dotted white;
+}
+#Footer-info-container {
+	width:100vw;
+	height:auto;
+	display:flex;
+	flex-direction:row;
+	justify-content: space-around;
+    align-items: flex-start;	
+	border-bottom:4px dotted white;
+	margin-bottom:40px;
+	
+}  
+.ul-footer {
+	width:20%;
+	padding:20px 0;
+}
+.ul-footer li{
+	font-size:1.1rem;
+	font-family:Impact, Charcoal, sans-serif;
+	font-style:oblique;
+	font-weight:400;
+	color:white;
+	text-align:center;
+	list-style:none;
+	padding:10px 0;
+	position:relative;
+	z-index:20;
+	
+}
+.ul-footer li a {
+	text-decoration:none;
+	color:white;
+	border-bottom:1px solid white;
+}
+
+.Title-li-footer {
+	padding:20px 0 0 0;
+	font-size:1.8rem;
+	font-family:Impact, Charcoal, sans-serif;
+	font-style:oblique;
+	color:white;
+	font-weight:700;
+	text-align:center;
+	border-bottom:2px solid white;
+}
+.Title-li-footer a {
+	text-decoration:none;
+}
+#Facebook-li::before {
+	content:"";
+	display:inline-block;
+	background-image:url("icons/Facebook Filled-50-100-500px/icons8-facebook-filled-50.png");
+	background-size:cover;
+	width: 20px;
+    height: 20px;
+}
+#Facebook-li {
+	border:1px solid white;
+}
+#Instagram-li {
+	border:1px solid white;
+}
+#TripAdvisor-li {
+	border:1px solid white;
+}
+#Instagram-li::before {
+	content:"";
+	display:inline-block;
+	background-image:url("icons/Instagram Filled-50-100-500px/icons8-instagram-filled-50.png");
+	background-size:cover;
+	width: 20px;
+    height: 20px;
+	
+	
+}
+#TripAdvisor-li::before {
+	content:"";
+	display:inline-block;
+	background-image:url("icons/TripAdvisor Filled-50-100-500px/icons8-tripadvisor-filled-50.png");
+	background-size:cover;
+	width: 20px;
+    height: 20px;
+	
+	
+}
+
+/* Media queries */
+
+
+@media screen and (min-width: 450px) {
+	
+#Main-bar-icon-container-Facebook::before {
+	margin-right:20px;
+}
+#Main-bar-icon-container-Instagram::before {
+	margin-right:25px;
+}
+
+/* BOOKING ELEMENTS */
+
+#Title-container {
+	height:60vh;
+	
+}
+   /* FOOTER ELEMENTS */
+}
+
+@media screen and (min-width: 750px) {
+
+#button img {
+	width:40px;
+	height:40px;
+}
+#Menu-elements h2{
+	font-size:2.5rem;
+}
+#Menu-elements h3 {
+	font-size:1.6rem;
+}
+#Main-bar-icon-container-Facebook::before {
+	width: 40px;
+    height: 40px;
+	margin-right:20px;
+}
+#Main-bar-icon-container-Instagram::before {
+	width: 40px;
+    height: 40px;
+	margin-right:25px;
+	
+}
+
+
+/* BOOKING ELEMENTS */
+
+#Title-container {
+	height:70vh;
+	
+}
+#Title-container h2 {
+	font-size:2.1rem;
+}
+#Opening-times-main-container h2 {
+	font-size:2.1rem;
+}
+
+
+#Days-container p {
+	font-size:1.7rem;
+}
+
+#Hours-container p {
+	font-size:1.7rem;
+}  
+
+   /* FOOTER ELEMENTS */
+   
+.ul-footer li{
+	font-size:1.4rem;
+}
+}
+
+@media screen and (min-width: 900px) {
+	
+#button {
+visibility:hidden;
+}
+#Menu-bar {
+	height:auto;
+}
+#Menu-elements {
+	height:20vh;
+}
+#Horizontal-bar-container {
+	display:flex;	
+}
+#Menu-elements h2{
+	padding-top:30px;
+	font-size:2.9rem;
+}
+#Menu-elements h3 {
+	font-size:2.4rem;
+}
+#Stars-container {
+	margin-top:35px;
+}
+#Main-bar-icon-container-Facebook::before {
+	width: 40px;
+    height: 40px;
+}
+#Main-bar-icon-container-Instagram::before {
+	width: 40px;
+    height: 40px;
+}
+
+/* BOOKING ELEMENTS */
+
+#Title-container {
+	width:50vw;
+	height:auto;
+}
+#Title-container h2 {
+	font-size:1.9rem;
+	
+}
+#Opening-times-main-container {
+	width:50vw;
+	height:auto;
+	
+}
+#Opening-times-main-container h2 {
+	font-size:1.7rem;
+}
+#Opening-times-schedule-container {
+	width:50vw;
+	display:flex;
+	flex-direction:row;
+	justify-content: center;
+    align-items: center;
+}
+#Days-container {
+	width:25vw;
+	margin-top:15px;
+	padding-bottom:20px;
+}
+#Days-container p {
+	font-size:1.5rem;
+}
+#Hours-container {
+	width:25vw;
+	margin-top:15px;
+	padding-bottom:20px;
+}
+#Hours-container p {
+	font-size:1.5rem;
+}
+#Booking-opening-times-container {
+	display:flex;
+}
+
+   /* FOOTER ELEMENTS */
+   
+.ul-footer li{
+	font-size:1.9rem;
+}
+	
+}
+
